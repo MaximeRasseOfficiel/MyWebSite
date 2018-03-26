@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="rsc/logo/favicon.png">
+		<link rel="stylesheet" href="mycss.css">
+		<title>Mes Projets</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="container-fluid">
+					<ul>
+						<li><img id="logo" alt="favicon" src="rsc/logo/favicon.png"></li>
+						<li><a href="accueil.html">Accueil</a></li>
+						<li><a href="formation.html">Formation</a></li>
+						<li><a href="experience.html">Experience</a></li>
+						<li><a href="projets.html">Projets d'étude</a></li>
+						<li style="float:right"><a class="active" href="rsc/file/CV_RASSE_Maxime.pdf">CV</a></li>
+					</ul>
+				</div>		
+			</nav>
+			<h1 class="titre">
+				Mes Projets
+			</h1>
+		</header>
+		<section>
+			<div class="container">
+				<div class="section-header">
+					<hr>
+					<h2>
+						2018 - Application Java - Constitution d'une base de données de Paris Sportifs
+					</h2>
+					<hr>
+				</div>
+				<div class="content-textProjet">
+					<div class="content-img">
+						<img class="dessin" src="rsc/img/Prono.png" alt="Capture d'écran de l'application">
+					</div>
+					<p class="resume">
+						Lors de ma première année de mon cursus de Master SID (Sciences et Ingénierie des Données) dispencé à <a class="help" href="http://mastersid.univ-rouen.fr/" title="UFR">l'UFR des sciences et techniques</a> à Saint Etienne du Rouvray, j'ai pu réaliser un projet de constitution d'une base de données de Paris Sportif.
+					</p>
+					<p class="resume">
+						L'objectif de ce projet est de combiner les compétences complémentaires des étudiants du M1 SID pour créer une application de pronostics sportifs. Les compétences des étudiants se destinant au M2 GIME seront dans un premier temps exploitées pour extraire depuis un site internet un ensemble important de pronostics réalisés par des experts. Ces données devront être organisées et stockées de façon à pouvoir y accéder simplement.
+					</p>
+					<p class="resume">
+						Pour ce projet qui consiste à réaliser un logiciel de <a class="help" href="https://fr.wikipedia.org/wiki/Robot_d%27indexation" title="WEb crawling">web crawling*</a> qui consiste à récupérer des données sur le web pour ensuite les stockés dans une base de données sur laquelle nous allons pouvoir appliquer des traitements.
+						<br>
+						Pour se faire, nous avons utilisé une librairie de <a class="help" href="https://fr.wikipedia.org/wiki/Analyse_syntaxique">parsing*</a> nomée <a class="help" href="https://jsoup.org/" title="Jsoup Librairie">JSoup</a> qui permet de faire une analyse syntaxique de page web. En récupérant le contenue que nous souhaitions sur les différentes pages Web, nous avons pu constituer une base de données de tous les utilisateurs du site de Paris Sportif ce qui nous permettait par la suite de réaliser de l'apprentissage de données sur celle-ci.
+					</p>
+					<div class="reset"></div>	
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="section-header">
+					<hr>
+					<h2>
+						2017 - Application Arduino, Android & Raspberry Pi - Robot piloté par application Android
+					</h2>
+					<hr>
+				</div>
+				<div class="content-textProjet">
+					<div class="content-img">
+						<img class="dessin" src="rsc/img/robot1.jpg" alt="Vue du robot">
+					</div>
+					<p class="resume">
+						Dans le cadre de ma licence 3 dispencée à <a class="help" href="http://licenceeea.univ-rouen.fr/" title="licence">l'UFR des sciences et techniques</a> à Saint Etienne du Rouvray, j'ai pu réaliser un projet de caméra robotisée embarquée et connéctée
+					</p>
+					<p class="resume">
+						L'objectif du projet était de réaliser une caméra motorisée (grâce à un robot) et connéctée à une application Android en temps réel.
+					</p>
+					<p class="resume">
+						Pour réaliser le robot motorisé, j'ai utilisé une base roulante DFRobot 2WD. Le choix de cette base est qu’elle est déjà complète, disposant de deux moteurs pilotables par Arduino, et donc plutôt simple à programmer. D’une base permettant de contenir, la carte Arduino qui permettra de contrôler les moteurs, la carte Raspberry Pi qui va permettre d’envoyer le flux vidéo, le support de piles, pour alimenter la base et les différents modules. Et la caméra qui sera relié au Raspberry pi.
+					</p>
+					<div class="reset"></div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="section-header">
+					<hr>
+					<h2>
+						2016 - Application Arduino - Station météo connectée
+					</h2>
+					<hr>
+				</div>
+				<div class="content-textProjet">
+					<div class="content-img">
+						<img class="dessin" src="rsc/img/meteo.jpg" alt="Montage de la station meteo">
+					</div>
+					<p class="resume">
+						Dans le cadre d'un projet de ma licence 2 dispencée à <a class="help" href="http://licenceeea.univ-rouen.fr/" title="licence">l'UFR des sciences et techniques</a> à Saint Etienne du Rouvray, j'ai pu réaliser un projet de station météo connectée.
+					</p>
+					<p class="resume">
+						L'objectif du projet était de réaliser une station météo à base de composants Arduino et de Shield arduino tels que des shields Xbee, Wifi...
+					</p>
+					<p class="resume">
+						Pour réaliser cette station météo connectée, j'ai pu utiliser différents type de capteurs tels que : un capteur d'humidité et de température, un anémomètre, un pluviomètre, la récupérations des données se faisait via une première carte Arduino qui était dite 'Carte Station' car c'est sur celle-ci les différents capteurs étaient branchés, cette carte se trouvait donc dans un boitier à l'extérieur du bâtimment de l'UFR. 
+						Une autre carte Arduino dite 'Carte Base', intérieure, disposait d'un Shield LCD pour avoir un écran LCD 2*16 comme celui présenté ci-dessous.
+					</p>
+					<p class="resume">
+						Sur cette écran nous pouvions visualiser les différentes valeurs recueillies par les capteurs.
+						Les données étaient transmises d'un carte Arduino à une autre par l'intermédiaire d'un Emetteur/Recepteur 433MHz.
+						Enfin les données étaient transmise de la Carte Base vers un site Web par l'intermédiaire d'un shield Wifi.
+					</p>
+				</div>
+				<div class="reset"></div>
+			</div>
+		</section>
+		<footer>
+			<h2>
+				Contactez moi!
+			</h2>
+			<hr>
+			<div class="foot-contact">
+				<a href="https://www.facebook.com/maxime.rasse?ref=bookmarks"><img class="contact" src="rsc/img/facebook.png" alt="Facebook icon"></a>
+				<a href="https://twitter.com/EmixamRAS"><img class="contact" src="rsc/img/twitter.png" alt="Twitter icon"></a>
+				<a href="https://www.linkedin.com/in/maxime-rasse-5aa171134/"><img class="contact" src="rsc/img/linkedin.png" alt="Linkedin icon"></a>
+			</div>
+
+		</footer>
+	</body>
+</html>

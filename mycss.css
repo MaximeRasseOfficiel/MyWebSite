@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+}
+/* Spécificité 0.0.1 */
+nav{ 
+	position: relative;
+}
+
+/* Spécificité 0.0.2 */
+nav ul {
+
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #343a40;
+}
+
+/* Spécificité 0.0.2 */
+nav li {
+    float: left;
+}
+
+/* Spécificité 0.0.3 */
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-family: Avantgarde, sans-serif;
+}
+
+/* Spécificité 0.0.4 */
+nav li a:hover:not(.active) {
+    background-color: rgba(255,255,255,.4);
+}
+
+/* Spécificité 0.1.0 */
+.active {
+    background-color: #4CAF80;
+}
+
+/* Spécificité 0.0.1 et 0.1.0*/
+h1,.description{
+	color: rgb(33, 37, 41);
+	font-family: 'Trocchi', serif;
+	font-weight: normal; 
+	line-height: 60px;
+	text-align: center;
+	margin-top: 20px;
+
+}
+/* Spécificité 0.0.1*/
+h2{
+	color: rgb(33, 37, 41);
+	font-family: 'Trocchi', serif;
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Spécificité 0.0.1*/
+h3{
+	color: rgb(33, 37, 41);
+	font-family: 'Trocchi', serif;
+	font-size: 10px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Spécificité 1.0.0 */
+#logo{
+	margin-top:2px;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+/* Spécificité 0.0.1 */
+hr{
+  margin: 25px auto;
+  width: 90%;
+  height: 2px;
+  background-color: rgb(33, 37, 41);
+  border: none; /*on supprime le style par défaut*/
+}
+/* Spécificité 0.1.0 */
+.contact
+{
+	width: 40px;
+	height: 40px;
+}
+/* Spécificité 0.1.0 */
+.foot-contact
+{
+	position: absolute;
+    right: 20px;
+}
+/* Spécificité 0.1.0 */
+.accroche
+{
+	font-size: 16px;
+    margin-bottom: 0;
+    color: #808080;
+    padding-top: 0;
+    text-align: center;
+}
+/* Spécificité 0.1.0 */
+.intro
+{
+	text-align: center;
+	font-family:"Segoe Print", "Times New Roman", Verdana;
+	padding: 10px;
+	min-height: 44px;
+}
+
+/* Spécificité 0.1.0 */
+.icon
+{
+	border-radius: 50%;
+	height: auto; 
+	width: auto;
+	max-width: 200px; 
+	max-height: 200px;
+	margin: 5px;
+}
+/* Spécificité 0.1.1*/
+div .row{
+	margin: auto;
+	width: 80%;
+}
+
+/* Spécificité 0.1.1 */
+div .col{
+	margin-top: 20px;
+	display: inline-block;
+}
+
+/* Spécificité 0.1.0 */
+.dessin{
+	height: auto; 
+	width: auto; 
+	max-width: 600px; 
+	max-height: 600px;
+}
+
+/* Spécificité 0.1.1 */
+a.help{
+	text-decoration:none;
+	color:#17a2b8;
+}
+/* Spécificité 0.1.0 */
+.center{
+	text-decoration:none;
+	color:#17a2b8;
+	margin:0px auto;
+	width:200px;
+	display:block;
+
+}
+/* Spécificité 0.1.1 */
+a.help:hover {
+	color: red;
+}
+/* Spécificité 0.1.0 */
+.resume
+{
+	margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: justify;
+}
+/* Spécificité 0.1.1 */
+ul.listform{
+	margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    text-align: justify;
+}
+/* Spécificité 0.1.0 */
+.caroussel{
+	margin: auto;
+	width: 35%;
+}
+/* Spécificité 0.1.0 */
+.buttonright, .buttonleft{
+	display: inline-block;
+	border-radius: 5%;
+	background-color: rgba(0,0,200,0.3);
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 20px;
+	padding: 5%;
+	width: 45%;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 6px;
+}
+/* Spécificité 0.1.0 */
+.society
+{
+	max-width: 200px; 
+	max-height: 200px;
+}
+/* Spécificité 0.1.0 */
+.container-div
+{
+	width: 90%;
+	margin: auto;
+}
+/* Spécificité 0.1.0 */
+.content-logo{
+	margin: 10px;
+	float: left;
+	width:20%;
+}
+/* Spécificité 0.1.0 */
+.content-text{
+	width:90%;
+}
+/* Spécificité 0.1.0 */
+.content-img{
+	margin-left: 5%;
+	float: left;
+	width:50%;
+}
+/* Spécificité 0.1.0 */
+.float-right{
+	float: right;
+	margin-right: 5%;
+}
+/* Spécificité 0.1.0 */
+.reset{
+	clear: both;
+}
+/* Spécificité 0.1.0 */
+.icon-title{
+	font-family: 'Trocchi', serif;
+	font-size: 12px;
+	text-decoration: underline overline #FF3028;
+}
