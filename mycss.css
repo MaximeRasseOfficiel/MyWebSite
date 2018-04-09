@@ -1,37 +1,37 @@
 *{
 	margin: 0;
 }
-/* Spécificité 0.0.1 */
-nav{ 
-	position: relative;
+/* Spécificité 0.1.1*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-/* Spécificité 0.0.2 */
-nav ul {
-
-	list-style-type: none;
-	overflow: hidden;
-	background-color: #343a40;
+ul.topnav li {
+	float: left;
 }
 
-/* Spécificité 0.0.2 */
-nav li {
-    float: left;
-}
-
-/* Spécificité 0.0.3 */
-nav li a {
+ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 18px 20px;
+    padding: 14px 16px;
     text-decoration: none;
-    font-family: Avantgarde, sans-serif;
 }
 
-/* Spécificité 0.0.4 */
-nav li a:hover:not(.active) {
-    background-color: rgba(255,255,255,.4);
+ul.topnav li a:hover:not(.active) {
+	background-color: #111;
+}
+
+ul.topnav li a.active {
+	background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+	float: right;
 }
 
 /* Spécificité 0.1.0 */
@@ -72,8 +72,8 @@ h3{
 /* Spécificité 1.0.0 */
 #logo{
 	margin-top:2px;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	margin-left: 10px;
 }
 /* Spécificité 0.0.1 */
@@ -118,11 +118,8 @@ hr{
 .icon
 {
 	border-radius: 50%;
-	height: auto; 
-	width: auto;
-	max-width: 200px; 
-	max-height: 200px;
-	margin: 5px;
+	max-width: 80%; 
+	max-height: 80%;
 }
 /* Spécificité 0.1.1*/
 div .row{
@@ -132,16 +129,16 @@ div .row{
 
 /* Spécificité 0.1.1 */
 div .col{
-	margin-top: 20px;
-	display: inline-block;
+	float:left;
+	text-align: center;
+	padding-top: 2%;
+    width: 33%;
 }
 
 /* Spécificité 0.1.0 */
 .dessin{
-	height: auto; 
-	width: auto; 
-	max-width: 600px; 
-	max-height: 600px;
+	margin:auto;
+	max-width: 100%; 
 }
 
 /* Spécificité 0.1.1 */
@@ -180,22 +177,21 @@ ul.listform{
 /* Spécificité 0.1.0 */
 .caroussel{
 	margin: auto;
-	width: 35%;
+	width: 80%;
 }
 /* Spécificité 0.1.0 */
-.buttonright, .buttonleft{
-	display: inline-block;
-	border-radius: 5%;
-	background-color: rgba(0,0,200,0.3);
-	border: none;
+.buttons
+{
+	margin: auto;
+	width: 100%;
+}
+/* Spécificité 0.1.0 */
+.button{
+	width: 35%;
+	border-radius: 2em;
 	color: #FFFFFF;
-	text-align: center;
-	font-size: 20px;
-	padding: 5%;
-	width: 45%;
-	transition: all 0.5s;
-	cursor: pointer;
-	margin: 6px;
+	background-color: #4eb5f1;
+	margin-left: 10%;
 }
 /* Spécificité 0.1.0 */
 .society
@@ -206,7 +202,7 @@ ul.listform{
 /* Spécificité 0.1.0 */
 .container-div
 {
-	width: 90%;
+	width: 80%;
 	margin: auto;
 }
 /* Spécificité 0.1.0 */
@@ -236,7 +232,25 @@ ul.listform{
 }
 /* Spécificité 0.1.0 */
 .icon-title{
+	text-align: center;
 	font-family: 'Trocchi', serif;
 	font-size: 12px;
-	text-decoration: underline overline #FF3028;
+}
+
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    ul.listform{
+    	font-size: 60%;
+    }
+    p.accroche,p {
+    	font-size: 70%;
+    }
+    h2{
+    	font-size: 80%;
+    }
+    a.center{
+    	font-size: 60%;
+    }
 }
